@@ -18,7 +18,7 @@ void draw()
     //int l = bob.roll();
     bob.roll();
     bob.show();
-    t += l;
+    //t += l;
   }
   text(t,250,250);
  
@@ -41,10 +41,10 @@ class Dice
     myX = x;
     myY = y;
   }
-  public int roll()
+  void roll()
   {
     roll = (int)(Math.random()*6)+1;
-    return roll;
+    //return roll;
   }
   void show()
   {
