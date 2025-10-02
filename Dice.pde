@@ -3,6 +3,7 @@ int t = 0;
 void setup()
 {
   size(500, 300);
+  background(66,135,245);
   textAlign(CENTER, CENTER);
   noLoop();
   bob = new Dice(50, 150);
