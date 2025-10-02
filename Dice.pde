@@ -35,14 +35,14 @@ class Dice
   {
     //job of the constructor
     // is to intialize member varaibles
-    roll = (int)(Math.random()*6)+1;
+    mroll = (int)(Math.random()*6)+1;
     myX = x;
     myY = y;
   }
   public int roll()
   {
-    roll = (int)(Math.random()*6)+1;
-    return roll;
+    mroll = (int)(Math.random()*6)+1;
+    return mroll;
   }
   void show()
   {
@@ -51,32 +51,32 @@ class Dice
     rect(myX, myY, 50, 50);
     fill(0);
     //text(roll, myX-25, myY+25);
-    if(roll == 1){
+    if(mroll == 1){
     ellipse(myX+25,myY+25,5,5);
     }
-    if(roll == 2){
+    if(mroll == 2){
     ellipse(myX+10,myY+10,5,5);
     ellipse(myX+40,myY+40,5,5);
     }
-    if(roll == 3){
+    if(mroll == 3){
     ellipse(myX+10,myY+10,5,5);
     ellipse(myX+40,myY+40,5,5);
     ellipse(myX+25,myY+25,5,5);
     }
-    if(roll == 4){
+    if(mroll == 4){
     ellipse(myX+10,myY+10,5,5);
     ellipse(myX+10,myY+40,5,5);
     ellipse(myX+40,myY+10,5,5);
     ellipse(myX+40,myY+40,5,5);
     }
-    if(roll == 5){
+    if(mroll == 5){
     ellipse(myX+10,myY+10,5,5);
     ellipse(myX+10,myY+40,5,5);
     ellipse(myX+40,myY+10,5,5);
     ellipse(myX+40,myY+40,5,5);
     ellipse(myX+25,myY+25,5,5);
     }
-    if(roll == 6){
+    if(mroll == 6){
     ellipse(myX+10,myY+10,5,5);
     ellipse(myX+10,myY+40,5,5);
     ellipse(myX+40,myY+10,5,5);
