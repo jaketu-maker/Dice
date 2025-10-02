@@ -11,7 +11,7 @@ void setup()
 }
 void draw()
 {
-  background(66,135,245);
+  
   t = 0;
   for(int i = 10;i <= 475;i+=55){
     bob = new Dice(i, 150);
