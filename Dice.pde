@@ -3,7 +3,6 @@ int t = 0;
 void setup()
 {
   size(500, 300);
-  background(66,135,245);
   textAlign(CENTER, CENTER);
   noLoop();
   bob = new Dice(50, 150);
@@ -11,14 +10,13 @@ void setup()
 }
 void draw()
 {
-  
+  background(66,135,245);
   t = 0;
   for(int i = 10;i <= 475;i+=55){
     bob = new Dice(i, 150);
-    //int l = bob.roll();
-    //bob.roll();
+    int l = bob.roll();
     bob.show();
-    //t += l;
+    t += l;
   }
   text(t,250,250);
  
@@ -41,10 +39,10 @@ class Dice
     myX = x;
     myY = y;
   }
-  void roll()
+  public int roll()
   {
     roll = (int)(Math.random()*6)+1;
-    //return roll;
+    return roll;
   }
   void show()
   {
