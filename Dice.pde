@@ -16,7 +16,7 @@ void draw()
   for(int i = 10;i <= 475;i+=55){
     bob = new Dice(i, 150);
     //int l = bob.roll();
-    bob.roll();
+    //bob.roll();
     bob.show();
     //t += l;
   }
